@@ -14,6 +14,6 @@ Build command
 
 Push command(s)
 
-`docker push zeklouis/php-apache-composer:1.2`
+`docker push zeklouis/php-apache-composer:1.0`
 
-` docker push zeklouis/php-apache-composer:latest`
+`docker push zeklouis/php-apache-composer:latest`
