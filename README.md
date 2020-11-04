@@ -8,12 +8,12 @@ You can check the docker hub page [here](https://hub.docker.com/r/zeklouis/php-a
 
 Build command
 
-`docker build -t zeklouis/php-apache-composer:1.0 -t zeklouis/php-apache-composer:latest .`
+`docker build -t zeklouis/php-apache-composer:1.1 -t zeklouis/php-apache-composer:latest .`
 
 ## Push
 
 Push command(s)
 
-`docker push zeklouis/php-apache-composer:1.0`
+`docker push zeklouis/php-apache-composer:1.1`
 
 `docker push zeklouis/php-apache-composer:latest`

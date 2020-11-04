@@ -19,5 +19,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Install Phalcon Dependencies with Composer
 COPY ./000-default.conf /etc/apache2/sites-enabled
 
+# Enable mod rewrite
+RUN a2enmod rewrite
+
 # CD to the app dir
 WORKDIR /var/www
