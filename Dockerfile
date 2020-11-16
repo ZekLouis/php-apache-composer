@@ -11,7 +11,7 @@ RUN apt-get update -y &&\
     libzip-dev \
     nano \
     zip &&\
-    docker-php-ext-install zip
+    docker-php-ext-install zip mysqli pdo pdo_mysql
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
