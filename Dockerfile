@@ -1,5 +1,5 @@
 # PHP with Composer
-FROM php:7.4-apache
+FROM php:8.0-apache
 
 LABEL maintainer="Louis Gaume <zeklouis@gmail.com>"
 
@@ -16,7 +16,7 @@ RUN apt-get update -y &&\
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Install Phalcon Dependencies with Composer
+# Copy apache config file
 COPY ./000-default.conf /etc/apache2/sites-enabled
 
 # Enable mod rewrite
